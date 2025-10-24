@@ -1,9 +1,10 @@
 package part2;
 
 import interfaces.Expression;
+import interfaces.InferenceRule;
 import part1.ConcreteExpression;
 
-public class ModusPonens {
+public class ModusPonens implements InferenceRule {
     /// This method checks whether the two expressions fit the Modus Ponens pattern.
     public boolean matches(Expression expr1, Expression expr2) {
 

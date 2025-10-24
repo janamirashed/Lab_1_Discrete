@@ -1,4 +1,6 @@
 package part2;
 
-public class HypotheticalSyllogism {
+import interfaces.InferenceRule;
+
+class HypotheticalSyllogism implements InferenceRule {
 }

@@ -1,10 +1,11 @@
 package part2;
 
 import interfaces.Expression;
+import interfaces.InferenceRule;
 import part1.ConcreteExpression;
 
 /// Similar to ModucPonenes
-public class ModusTollens {
+public class ModusTollens implements InferenceRule {
     @Override
     public boolean matches(Expression expr1, Expression expr2) {
         String e1 = expr1.getRepresentation().replaceAll("\\s+", "");
