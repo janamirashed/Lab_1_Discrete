@@ -44,9 +44,9 @@ class DisjunctiveSyllogism implements InferenceRule {
     }
 
     @Override
-    public Expression apply(Expression exp1, Expression exp2) {
-        String e1 = exp1.getRepresentation().replaceAll("\\s+", "");
-        String e2 = exp2.getRepresentation().replaceAll("\\s+", "");
+    public Expression apply(Expression expr1, Expression expr2) {
+        String e1 = expr1.getRepresentation().replaceAll("\\s+", "");
+        String e2 = expr2.getRepresentation().replaceAll("\\s+", "");
 
         String disj, neg;
 
