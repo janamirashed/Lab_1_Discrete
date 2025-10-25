@@ -35,10 +35,10 @@ public class ModusPonens implements InferenceRule {
 
     /// Once matches() is true, apply() is called to actually infer the result.
     @Override
-    public Expression apply(Expression exp1, Expression exp2) {
+    public Expression apply(Expression expr1, Expression expr2) {
         /// It removes all spaces for simpler string splitting.
-        String e1 = exp1.getRepresentation().replaceAll("\\s+", "");
-        String e2 = exp2.getRepresentation().replaceAll("\\s+", "");
+        String e1 = expr1.getRepresentation().replaceAll("\\s+", "");
+        String e2 = expr2.getRepresentation().replaceAll("\\s+", "");
 
         /// Finds which of the two expressions is the implication (P > Q)
         /// Takes the right side (Q), trims it, and creates a new ConcreteExpression with it.
